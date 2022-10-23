@@ -1,0 +1,471 @@
+body {
+    background-color: rgb(61, 61, 61);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/*Hora de trabajar el header y nav*/
+
+header {
+    background-color: rgb(32, 32, 32);
+    height: 22vh;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+.title a{
+    text-decoration: none;
+}
+
+.title h1 {
+    color: white;
+    margin: 20px 0 0;
+    width: 50%;
+    text-align: center;
+    font-size: 10vw;
+    letter-spacing: 5px;
+}
+.title h1:hover {
+    color: rgb(236, 74, 101);
+    font-size: 12vw;
+    transition: .4s;
+}
+.title h1:hover span {
+    color: rgb(255, 53, 53);
+}
+.secciones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 80%;
+    margin: 0 auto;
+}
+.secciones a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(112, 112, 112);
+    
+    padding: 15px;
+    font-size: 5vw;
+    letter-spacing: 3px;
+    box-shadow: 5px 5px 5px black;
+    font-weight: bold;
+}
+
+.enlaceyou:hover {
+    padding: 20px;
+    transition: .3s;
+    background-color: rgb(236, 74, 101);
+    color: black;
+    box-shadow: 0px 5px 20px black;
+}
+
+.enlaceabout:hover {
+    padding: 20px;
+    transition: .3s;
+    background-color: rgb(61, 106, 231);
+    color: white;
+    box-shadow: 0px 5px 20px black;
+}
+/*FIN DEL HEADER NAV*/
+
+
+
+/*Aqui se trabajara el main*/
+.fcs {
+    width: 80%;
+    margin: 2vh auto 5vh;
+    background-image: url('../assets/img/cajitalove.jpg');
+    background-size: cover;
+    color: rgb(236, 57, 57, 0);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fcs:hover{
+    padding: 20px;
+    background-image: url('../assets/img/ilys.jpeg');
+    background-size: cover;
+    color: white;
+    transition: .3s;
+}
+.fcs:hover .heart{
+    color: red;
+}
+.fcs:hover .birthday{
+    color: rgb(96, 96, 250);
+}
+.fcs:hover .happy{
+    color: rgb(255, 221, 71);
+}
+
+
+
+
+.sectionfoto {
+    width: 70%;
+    height: 20vh;
+    margin: 50px  auto 20px;
+    display: flex;
+    justify-content: center;
+}
+.sectionfoto img{
+    width: 45%;
+}
+.sectionfoto img:hover{
+    width: 230px;
+    height: 195px;
+    transition: .5s;
+    box-shadow: 0px 0px 20px black;
+}
+.sectiontexto{
+    text-align: center;
+}
+.sectiontexto h2{
+    color: rgb(236, 74, 101);
+    font-size: 8vw;
+}
+.sectiontexto p{
+    color: white;
+    margin: 20px 75px;
+    font-size: 5vw;
+}
+
+
+
+
+
+/*YOU*/
+#body_you{
+    background-image: url('../assets/img/purple4k.jpg');
+    ;
+}
+.cutest{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+}
+.cutesth2 {
+    height: 8vh;
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 2px 2px 15px black;
+    background-color: rgb(68, 68, 68);
+    color: rgb(206, 43, 247);
+    display: flex;
+    align-items: center;
+}
+
+.cutesth2:hover{
+    background-color: rgb(44, 44, 44);
+    color: rgb(240, 51, 83);
+    box-shadow: 2px 2px 30px black;
+}
+.cutestparrafo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #8d1985;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cutestparrafo:hover{
+    color: white;
+}
+.cutest h2{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+
+/*carrusell*/
+
+.carrusel-container-todo{
+    height: 15vh;
+    width: 75%;
+    margin: 20px auto;
+}
+.flexcarrusel{
+    height: 15vh;
+    display: flex;
+}
+.card-juegoscat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.card-juegoscat img{
+    width: 85%;
+}
+.cardimg:hover{
+    width: 28vw;
+    transition: .2s;
+    box-shadow: 0px 0px 20px rgb(68, 0, 65);
+}
+
+
+/*main Fede(about)*/
+#body_fede{
+    background-image: url('../assets/img/blue4k.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainfede{
+    height: 80vh;
+}
+
+.fedeh1 {
+    background-image: linear-gradient(white, rgb(142, 142, 236));
+    color: rgb(85, 25, 163);
+    height: 10vh;
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.fedeh1 h1{
+    margin: 0;
+    letter-spacing: 3px;
+    font-size: 8vw;
+    font-family: 'Lucida Sans';
+}
+.fedeh1 h1:hover{
+    color: rgb(49, 86, 252);
+    font-size: 8.5vw;
+}
+.fedeh1:hover{
+    background-color: rgb(40, 96, 252);
+}
+.fedetexto{
+    height: 9vh;
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.fedetexto p{
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: bold;
+    padding: 15px;
+    color: white;
+}
+.fedetexto p:hover{
+    font-size: 3vw;
+}
+
+
+/*AQUI SE TRABAJARA EL FOOTER*/
+
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    color: rgb(236, 74, 101);
+    height: 23vw;
+}
+#footer h5{
+    margin: 0;
+}
+#footer:hover{
+    background-image:linear-gradient(rgb(85, 25, 163),rgb(116, 74, 216));
+    color: white;
+    transition: .7s;
+}
+#footer .p1{
+    font-size: 5vw;
+    margin-bottom: 10px;
+}
+#footer .p2{
+    margin-top: 10px;
+    font-size: 4vw;
+}
+
+/*Media querie*/
+@media (min-width:720px){
+    /*Comienzo del header nav*/
+    header {
+        height: 35vh;
+    }
+    .title{
+        height: 15vh;
+    }
+    .title h1 {
+        font-size: 5vw;
+    }
+    .title h1:hover {
+        font-size: 6vw;
+    }
+    .secciones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        width: 80%;
+        margin: 5px auto;
+    }
+    .secciones a{
+        padding: 30px;
+        margin: 5vw;
+        font-size: 3vw;
+    }
+    .secciones a:hover{
+        padding: 35px;
+    }
+    .enlaceyou:hover {
+        padding: 25px;
+    }
+    .enlaceabout:hover {
+        padding: 25px;
+    }
+    /*Fin del header nav*/
+
+    /*Comienzo del main*/
+    .fcs {
+        width: 60%;
+        height: 30vh;
+    }
+    .fcs h1{
+        font-size: 4vw;
+    }
+
+    .sectionfoto {
+        width: 55%;
+        height: 60vh;
+        margin: 50px  auto 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .sectiontexto h2{
+        font-size: 5vw;
+    }
+    .sectiontexto p{
+        color: white;
+        width: 50%;
+        margin: 20px auto;
+        font-size: 3vw;
+    }
+    .sectionfoto img{
+        width: 57%;
+    }
+    .sectionfoto img:hover{
+        width: 32vw;
+        height: 60vh;
+        transition: .7s;
+        box-shadow: 0px 0px 30px black;
+    }
+    /*Fin del main*/
+
+    /*main YOU*/
+    .cutesth2 {
+        height: 12vh;
+        justify-content: center;
+    }
+    .cutest h2{
+        margin: 0;
+        font-size: 2.5vw;
+    }
+    .carrusel-container-todo{
+        width: 70%;
+        margin: 20px auto 100px;
+        height: 40vh;
+    }
+    .cardimg:hover{
+        width: 22vw;
+        transition: .2s;
+        box-shadow: 0px 0px 20px rgb(68, 0, 65);
+    }
+    .flexcarrusel{
+        height: 47vh;
+    }
+    .sectiontexto{
+        margin: 100px;
+    }
+    /*fin main YOU*/
+
+
+    /*main Fede*/
+    #mainfede{
+        height: 150vh;
+    }
+    .fedeh1 {
+        height: 15vh;
+        width: 65%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .fedeh1 h1{
+        margin: 0;
+        letter-spacing: 3px;
+        font-size: 3vw;
+    }
+    .fedeh1 h1:hover{
+        color: rgb(49, 86, 252);
+        font-size: 3.5vw;
+        transition: .7s;
+    }
+    .fedeh1:hover{
+        background-color: rgb(40, 96, 252);
+    }
+    .fedetexto{
+        height: 9vh;
+        width: 50%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .fedetexto p{
+        margin: 0;
+        font-size: 1.3vw;
+        font-weight: bold;
+        padding: 15px;
+        color: white;
+    }
+    .fedetexto p:hover{
+        font-size: 1.7vw;
+        transition: .9s;
+    }
+
+
+    /*fin main Fede*/
+
+    /*Comienzo del footer*/
+    #footer{
+        height: 12vw;
+    }
+    #footer .p1{
+        margin-top: 20px;
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+    #footer .p2{
+        margin-top: 15px;
+        font-size: 2vw;
+    }
+}
