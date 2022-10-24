@@ -52,9 +52,8 @@ header {
     text-decoration: none;
     color: white;
     background-color: rgb(112, 112, 112);
-    
     padding: 15px;
-    font-size: 5vw;
+    font-size: 3.5vw;
     letter-spacing: 3px;
     box-shadow: 5px 5px 5px black;
     font-weight: bold;
@@ -82,22 +81,24 @@ header {
 /*Aqui se trabajara el main*/
 .fcs {
     width: 80%;
-    margin: 2vh auto 5vh;
+    margin: 5vh auto 5vh;
     background-image: url('../assets/img/cajitalove.jpg');
     background-size: cover;
     color: rgb(236, 57, 57, 0);
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
 }
 .fcs:hover{
-    padding: 20px;
+    height: 15vh;
     background-image: url('../assets/img/ilys.jpeg');
     background-size: cover;
     color: white;
     transition: .3s;
+    box-shadow: 0px 0px 30px rgb(184, 184, 184);
 }
 .fcs:hover .heart{
     color: red;
@@ -120,13 +121,15 @@ header {
     justify-content: center;
 }
 .sectionfoto img{
-    width: 45%;
+    width: 50%;
+    height: 90%;
+    box-shadow: 0px 0px 13px white;
 }
 .sectionfoto img:hover{
-    width: 230px;
-    height: 195px;
+    width: 57%;
+    height: 100%;
     transition: .5s;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 22px white;
 }
 .sectiontexto{
     text-align: center;
@@ -150,10 +153,7 @@ header {
     background-image: url('../assets/img/purple4k.jpg');
     ;
 }
-.cutest{
-    display: grid;
-    grid-template-columns: 11fr 1fr;
-}
+
 .cutesth2 {
     height: 8vh;
     width: 50%;
@@ -171,19 +171,8 @@ header {
     color: rgb(240, 51, 83);
     box-shadow: 2px 2px 30px black;
 }
-.cutestparrafo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    color: #8d1985;
-    font-size: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.cutestparrafo:hover{
-    color: white;
-}
-.cutest h2{
+
+.cutesth2 h2{
     margin: 0;
     font-family: sans-serif;
     font-weight: bolder;
@@ -193,13 +182,17 @@ header {
 /*carrusell*/
 
 .carrusel-container-todo{
-    height: 15vh;
-    width: 75%;
+    height: 20vh;
+    width: 85%;
     margin: 20px auto;
+    justify-content: center;
 }
 .flexcarrusel{
-    height: 15vh;
+    width: 90%;
+    margin: auto;
+    height: 20vh;
     display: flex;
+    justify-content: center;
 }
 .card-juegoscat{
     display: flex;
@@ -210,11 +203,12 @@ header {
 }
 .card-juegoscat img{
     width: 85%;
+    box-shadow: 0px 0px 8px rgb(68, 0, 65);
 }
 .cardimg:hover{
-    width: 28vw;
+    width: 100%;
     transition: .2s;
-    box-shadow: 0px 0px 20px rgb(68, 0, 65);
+    box-shadow: 0px 0px 15px rgb(68, 0, 65);
 }
 
 
@@ -272,6 +266,36 @@ header {
     font-size: 3vw;
 }
 
+/*Carrusell*/
+.carrusel-container-todo1{
+    height: 25vh;
+    width: 85%;
+    margin: 20px auto;
+    justify-content: center;
+}
+.flexcarrusel1{
+    width: 90%;
+    margin: auto;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+.card-juegoscat1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+.card-juegoscat1 img{
+    width: 85%;
+    box-shadow: 0px 0px 8px rgb(24, 1, 66);
+}
+.cardimg1:hover{
+    width: 100%;
+    transition: .2s;
+    box-shadow: 0px 0px 15px rgb(24, 1, 66);
+}
 
 /*AQUI SE TRABAJARA EL FOOTER*/
 
@@ -303,6 +327,50 @@ header {
 }
 
 /*Media querie*/
+
+@media (min-width:620px){
+
+    /*Index*/
+    .sectionfoto {
+        width: 70%;
+        height: 20vh;
+        margin: 50px  auto 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .sectionfoto img{
+        width: 45%;
+        height: 90%;
+        box-shadow: 0px 0px 13px white;
+    }
+    .sectionfoto img:hover{
+        width: 50%;
+        height: 100%;
+        transition: .5s;
+        box-shadow: 0px 0px 22px white;
+    }
+
+    /*You*/
+    .carrusel-container-todo{
+        height: 25vh;
+    }
+    .flexcarrusel{
+        height: 25vh;
+    }
+    
+    /*Fede*/
+    #mainfede{
+        height: 85vh;
+    }
+    .carrusel-container-todo1{
+        height: 29vh;
+    }
+    .flexcarrusel1{
+        height: 29vh;
+    }
+}
+
+
 @media (min-width:720px){
     /*Comienzo del header nav*/
     header {
@@ -328,7 +396,7 @@ header {
     .secciones a{
         padding: 30px;
         margin: 5vw;
-        font-size: 3vw;
+        font-size: 2.2vw;
     }
     .secciones a:hover{
         padding: 35px;
@@ -344,7 +412,10 @@ header {
     /*Comienzo del main*/
     .fcs {
         width: 60%;
-        height: 30vh;
+        height: 20vh;
+    }
+    .fcs:hover{
+        height: 28vh;
     }
     .fcs h1{
         font-size: 4vw;
@@ -356,52 +427,67 @@ header {
         margin: 50px  auto 20px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .sectiontexto h2{
+        margin-top: 0;
         font-size: 5vw;
     }
     .sectiontexto p{
         color: white;
         width: 50%;
-        margin: 20px auto;
+        margin: 0px auto;
         font-size: 3vw;
     }
     .sectionfoto img{
-        width: 57%;
+        width: 52%;
+        box-shadow: 0px 0px 20px white;
     }
     .sectionfoto img:hover{
-        width: 32vw;
-        height: 60vh;
+        width: 56%;
         transition: .7s;
-        box-shadow: 0px 0px 30px black;
+        box-shadow: 0px 0px 30px white;
     }
     /*Fin del main*/
 
     /*main YOU*/
+
+    
     .cutesth2 {
         height: 12vh;
         justify-content: center;
     }
-    .cutest h2{
+    .cutesth2 h2{
         margin: 0;
         font-size: 2.5vw;
     }
-    .carrusel-container-todo{
-        width: 70%;
-        margin: 20px auto 100px;
-        height: 40vh;
-    }
-    .cardimg:hover{
-        width: 22vw;
-        transition: .2s;
-        box-shadow: 0px 0px 20px rgb(68, 0, 65);
-    }
-    .flexcarrusel{
-        height: 47vh;
-    }
-    .sectiontexto{
+    .sectiontexto {
         margin: 100px;
     }
+    /*Carrusel you*/
+    
+    
+
+    .carrusel-container-todo{
+        height: 38vh;
+        width: 65%;
+    }
+    .flexcarrusel{
+        width: 90%;
+        height: 38vh;
+    }
+    
+    .card-juegoscat img{
+        width: 70%;
+        box-shadow: 0px 0px 20px rgb(68, 0, 65);
+    }
+    .cardimg:hover{
+        width: 75%;
+        transition: .2s;
+        box-shadow: 0px 0px 27px rgb(68, 0, 65);
+    }
+    
+
     /*fin main YOU*/
 
 
@@ -450,6 +536,30 @@ header {
     .fedetexto p:hover{
         font-size: 1.7vw;
         transition: .9s;
+    }
+
+    /*carrusel fede*/
+
+    #mainfede{
+        height: 115vh;
+    }
+    .carrusel-container-todo1{
+        height: 42vh;
+        width: 65%;
+    }
+    .flexcarrusel1{
+        width: 90%;
+        height: 42vh;
+    }
+    
+    .card-juegoscat1 img{
+        width: 65%;
+        box-shadow: 0px 0px 20px rgb(17, 2, 59);
+    }
+    .cardimg1:hover{
+        width: 70%;
+        transition: .2s;
+        box-shadow: 0px 0px 30px rgb(17, 2, 59);
     }
 
 
