@@ -144,14 +144,38 @@ header {
     font-size: 5vw;
 }
 
+.video {
+    width:60%;
+    margin: 35px auto 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video video{
+    width: 100px;
+    box-shadow: 0px 5px 10px black;
+}
+.video video:hover{
+    box-shadow: 0px 10px 30px black;
+    transition: .5s;
+}
+
+
 
 
 
 
 /*YOU*/
 #body_you{
+    /*background-color: #f3d0f6;*/
     background-image: url('../assets/img/purple4k.jpg');
-    ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main_you{
+    
+    height: 120vh;
+
 }
 
 .cutesth2 {
@@ -178,6 +202,7 @@ header {
     font-weight: bolder;
     font-size: 4vw;
 }
+
 
 /*carrusell*/
 
@@ -349,8 +374,15 @@ header {
         transition: .5s;
         box-shadow: 0px 0px 22px white;
     }
+    .video video{
+        width: 200px;
+        
+    }
 
     /*You*/
+    #main_you{
+        height: 120vh;
+    }
     .carrusel-container-todo{
         height: 25vh;
     }
@@ -448,11 +480,19 @@ header {
         transition: .7s;
         box-shadow: 0px 0px 30px white;
     }
+
+    .video video{
+        width: 300px;
+        
+    }
     /*Fin del main*/
 
     /*main YOU*/
 
     
+    #main_you{
+        height: 195vh;
+    }
     .cutesth2 {
         height: 12vh;
         justify-content: center;
