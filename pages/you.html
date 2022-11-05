@@ -3,6 +3,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos.css">
+
+    
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../libs/bootstrap-5.2.0/css/bootstrap.min.css">
@@ -26,8 +28,8 @@
 
 
     <main id="main_you">
-            <div class="cutesth2">
-                <h2>Some pictures of the CUTEST <3</h2>
+            <div class="cutesth2" id="confettiYou">
+                <h2 id="h2You">SOME PICTURES OF THE CUTEST <3</h2>
             </div>
             
     <div class="carrusel-container-todo">
@@ -36,13 +38,13 @@
                 <div class="carousel-item active">
                     <div class="flexcarrusel">
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella10.jpeg" >
+                            <img class="cardimg" id="confettiFotos" src="../assets/img/ella10.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella3.jpeg" >
+                            <img class="cardimg" id="confettiFotos1" src="../assets/img/ella3.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella2.jpeg" >
+                            <img class="cardimg" id="confettiFotos2" src="../assets/img/ella2.jpeg" >
                         </article>
 
                     </div>
@@ -50,13 +52,13 @@
                 <div class="carousel-item">
                     <div class="flexcarrusel">
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella4.jpeg" >
+                            <img class="cardimg" id="confettiFotos3" src="../assets/img/ella4.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella6.jpeg" >
+                            <img class="cardimg" id="confettiFotos4" src="../assets/img/ella6.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella5.jpeg" >
+                            <img class="cardimg" id="confettiFotos5" src="../assets/img/ella5.jpeg" >
                         </article>
                         
                     </div>
@@ -64,13 +66,13 @@
                 <div class="carousel-item">
                     <div class="flexcarrusel">
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella8.jpeg" >
+                            <img class="cardimg" id="confettiFotos6" src="../assets/img/ella8.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella7.jpeg" >
+                            <img class="cardimg" id="confettiFotos7" src="../assets/img/ella7.jpeg" >
                         </article>
                         <article class="card-juegoscat">
-                            <img class="cardimg" src="../assets/img/ella9.jpeg" >
+                            <img class="cardimg" id="confettiFotos8" src="../assets/img/ella9.jpeg" >
                         </article>
                         
                     </div>
@@ -155,15 +157,43 @@
     </main>
 
 
-
-
-
     <footer id="footer">
         <h5 class="p1">I LOVE YOU SO MUCH</h5>
-        <h5 class="p2">Have a great day <3</p>
+        <h5 class="p2">Have an amazing day <3</p>
     </footer>
     <!--script-->
+    
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        const jsConfetti1 = new JSConfetti();
+
+function confettiBtnYou(){
+    jsConfetti1.addConfetti({
+        emojis: ['😜', '❤️', '🥳', '🥰', '🎉', '😻'],
+        emojiSize: 40,
+    })
+}
+let youConfetti = document.getElementById("h2You")
+youConfetti.addEventListener("click", confettiBtnYou);
+    </script>
     <script src="../libs/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+    <!--Confettis-->
+    <script src="../confetti.js"></script>
+    <script>
+        const start = () => {
+    setTimeout(function(){
+        confetti.start();
+    });
+
+};
+start();
+
+    </script>
+    <script src="../index.min.js"></script>
     <script src="../codigo.js"></script>
 </body>
 </html>

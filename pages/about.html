@@ -28,12 +28,12 @@
     <main id="mainfede">
         
         <div class="fedeh1">
-            <h1>FEDE <3</h1>
+            <h1 id="confettiFede">FEDE <3</h1>
         </div>
         <div class="fedetexto">
-            <p>I know is your day with well,
-                i know how much u love him so its never a bad moments to see 
-                some photos of the cutest :)
+            <p>I know is your day < 3.. , but
+                i know how much you love him so its never a bad moment to see 
+                some photos of the cutest baby :)
             </p>
         </div>
 
@@ -144,6 +144,7 @@
                 </button>
             </div>
         </div>
+        <canvas id="my-canvas-new"></canvas>
         
 
 
@@ -152,10 +153,37 @@
 
     <footer id="footer">
         <h5 class="p1">I LOVE YOU SO MUCH</h5>
-        <h5 class="p2">Have a great day <3</p>
+        <h5 class="p2">Have an amazing day <3</p>
     </footer>
     <!--script-->
     <script src="../libs/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+    <script src="../confetti.js"></script>
+    <script>
+        const start = () => {
+    setTimeout(function(){
+        confetti.start();
+    });
+
+};
+start();
+
+    </script>
+    <!--Confettis-->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script>
+        const jsConfetti2 = new JSConfetti();
+
+function confettiBtnFede(){
+    jsConfetti2.addConfetti({
+        emojis: ['😁', '🤍', '🥳', '🥰', '🎉', '👶'],
+        emojiSize: 40,
+    })
+}
+let fedeConfetti = document.getElementById("confettiFede")
+fedeConfetti.addEventListener("click", confettiBtnFede);
+    </script>
+    <script src="node_modules/confetti-js/dist/index.min.js"></script>
+    <script src="../index.min.js"></script>
     <script src="../codigo.js"></script>
 </body>
 </html>
