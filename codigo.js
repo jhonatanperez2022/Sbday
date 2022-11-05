@@ -28,15 +28,6 @@ confetti.destroyTarget(false);
 
 
 
-let confettiFede = new Confetti(`confettiFede`);
-
-confettiFede.setCount(75);
-confettiFede.setSize(3);
-confettiFede.setPower(25);
-confettiFede.setFade(false);
-confettiFede.destroyTarget(false);
-
-
 
 //confettis en sus fotos
 // let confetti2 = new Confetti(`confettiFotos`);

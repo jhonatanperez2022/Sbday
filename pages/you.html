@@ -146,14 +146,7 @@
         </div>
     </div>
 
-
-    <section class="sectiontexto">
-        <h2>My special person</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quisquam magnam officiis, quo illo autem tenetur 
-            consectetur ea assumenda culpa explicabo repellat sint 
-            blanditiis doloremque aliquid dolore unde ab facere a!</p>
-    </section>
+    <canvas id="my-canvas2"></canvas>
     </main>
 
 
@@ -183,7 +176,7 @@ youConfetti.addEventListener("click", confettiBtnYou);
     <script src="../libs/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
     <!--Confettis-->
     <script src="../confetti.js"></script>
-    <script>
+    <!-- <script>
         const start = () => {
     setTimeout(function(){
         confetti.start();
@@ -192,8 +185,13 @@ youConfetti.addEventListener("click", confettiBtnYou);
 };
 start();
 
-    </script>
+    </script> -->
     <script src="../index.min.js"></script>
+    <script>
+        var confettiSettings2 = {target: `my-canvas2`};
+var confettiYou = new ConfettiGenerator(confettiSettings2);
+confettiYou.render();
+    </script>
     <script src="../codigo.js"></script>
 </body>
 </html>
